@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--son configuraciones para el navegador-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Proyecto Integrador Front | Gisela Martinez </title>
+    <link rel="shortcut icon " href="./favicon.ico.png" type="Langer">
+     <!--Favicon-->
+    <!--va primero el script para watsapp-->
+    <script src="https://kit.fontawesome.com/1b88fb1366.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./css/estilos.css">
+ <!-- <style>
+            html{
+                scroll-behavior: smooth;
+            } 
+        </style>-->  
+</head>
+    <!--etiquetas que ve el usuario-->
+<body>
+    <header >   <!--alt se debe usar para describir la imagen-->
+        <section class="cabecera">
+            <a  href="index.html"> 
+                <!--//EXTERNO Y ABSOLUTO //ancla nos lleva a una pagina web//target para que se abra en otra pestaña-->
+                <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo 4.0" loading="lazy">
+            </a>
+                <h2 class="cabeceraTexto colorBlanco"> Conf Bs As </h2>
+                <nav> <!--//LISTA DESORDENADA//solamente enlaces de navegacion-->
+                    <ul class="listaC">  <!--ol lista ordenada 1,2,3-->
+                        <li class="linea"><a class="colorBlanco linkNav " href="#conferencia">La conferencia</a></li>
+                        <li class="linea"><a class="colorG linkNav " href="#oradores">Los oradores</a></li>
+                        <li class="linea"><a class="colorG linkNav" href="#lugarFecha">El lugar y la fecha</a></li>
+                        <li class="linea"><a class="colorG linkNav"  href="#formularioOrador">Conviertete en orador</a></li>
+                        <li class="linea"><a class="colorVerde linkNav" href="./pages/tickets.html">Comprar tickets</a></li>
+                    </ul>
+                </nav>
+        </section>
+        
+    </header> 
+    <main > 
+        <section class="conf">
+            <!-- la imagen de fondo la ponemos con css<img src=" " alt="imagen del palacio de Aguas Argentinas ">--> 
+            <h1 class="titulo"> Conf de Buenos Aires </h1>
+                <p class="Pprincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ea error, cum excepturi rerum veritatis 
+                repellat perferendis magni delectus aliquid tempore eos 
+                cupiditate totam neque iure accusantium in
+                dolorum officiis minus.
+               
+            </p>
+            <a class="linea linkNav lista colorBlanco borde" href=""> Quiero ser Orador </a>
+            <a class="linea linkNav lista colorBlanco bordeV" href=" "> Comprar tickets </a>
+        </section>
+    
+    <!--//// class= //para el margen-->
+       
+        <section class="oradores colorNegro" id="oradores">
+                <h2 class="fuenteNormal"> CONOCE A LOS </h2>
+                <h2 class="fuenteGrande">    ORADORES </h2>
+            <!--imagenes-->
+                <div class="tarjeta"> <!--etiqueta divisoria---->
+                    <img src="./assets/img/steve.jpg" alt=" Steve Jobs" witch="600"loading="lazy">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="colorAmarillo cuerpoT"> JavaScript </h4>
+                        <h4 class="colorCeleste"> React </h4>
+                        <h3 class="nombre"> Steve Jobs </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
+                        nobis dolorem, fuga voluptatum illo quos, voluptates, similique pariatur repellat placeat odio 
+                        itaque quis? Voluptate placeat modi quae iste?</p>
+                </div>
+                </div>    
+                <div class="tarjeta">    
+                    <img src="./assets/img/bill.jpg" alt=" Bill Gates "loading="lazy"><!--loading=lazy evita sobre carga de imagenes-->
+                    <div class="cuerpoTarjeta"> 
+                        <h4 class="colorAmarillo cuerpoT "> JavaScript </h4>
+                        <h4 class="colorCeleste"> React </h4>
+                        <h3 class="nombre"> Bill Gates </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
+                        nobis dolorem, fuga voluptatum illo quos, voluptates, similique pariatur repellat placeat odio 
+                        itaque quis? Voluptate placeat modi quae iste?</p>
+                    </div>
+                </div>
+                <div class="tarjeta">    
+                    <img src="./assets/img/ada.jpeg" alt=" Ada Lovelace"loading="lazy">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="colorGris cuerpoT "> Negocios </h4>
+                        <h4 class="colorRojo"> Startups </h4>
+                        <h3 class="nombre"> Ada Lovelace </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
+                        nobis dolorem, fuga voluptatum illo quos, voluptates, similique pariatur repellat placeat odio 
+                        itaque quis? Voluptate placeat modi quae iste?</p>
+                    </div>
+                </div>  
+        </section>
+        
+            <!--poner color gris de fondo-->
+        <section class="octubre" id="lugarFecha">
+            <div class="octubreCuerpo">
+                <div class="octubreCuerpo img" >
+                    <img src="./assets/img/honolulu.jpg" alt="Mar del Plata" width="600" loading="lazy"> <!--loading=lazy evita sobre carga de imagenes-->
+                </div> 
+                <div class="octubreCuerpoTexto">
+                    <h2 class="octubreCuerpoTextoh2">Bs As - Octubre</h2>
+                    <p class="octubreCuerpoTextop">Buenos Aires es la capital y ciudad más poblada de la República Argentina.
+                    También es llamada Capital Federal, por ser la sede del Gobierno nacional.​ Es uno de los 24 distritos, o «jurisdicciones de primer orden»
+                    que conforman el país. Desde 1996 es una ciudad autónoma; tiene sus propios poderes ejecutivo, legislativo y judicial.</p>                  
+                    <div>
+                        <a class="linea linkNav colorBlanco borde" href="./pages/404.html">Conoce mas</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>  
+        </section>
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237167395!2d-58.39758742425996!3d-34.60070657295539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1693512779150!5m2!1ses!2sar"
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </section>
+        <section id="formularioOrador"> 
+            <div class="cuadro">
+                <h2>Conviertete en orador</h2>
+                <form action="./pages/404.html">  <!--action="#" ó method="get"// para ir a otro lado-->
+                    <div>
+                        <input type="text" id="name" name= "name" placeholder="Nombre" required> <!--donde completa el usuario// importante poner id-->
+                        <input type="text" id="apellido" name= "apellido" placeholder="Apellido" required>
+                    </div>
+                    <textarea name="comentario" id="comentario" cols="55" rows="5"></textarea>
+                    </div>
+                    <div>
+                    <input type="reset" value="limpiar formulario"> <!--limpia el formulario-->
+                    <input type="submit" value="enviar formulario" required>
+                    </div>
+                </form> 
+            </div>    
+            
+        
+                        
+
+        </section>
+
+    </main>
+    <aside>
+        <p> PUBLICIDAD </p> <!--estructura posible para publicidad-->
+        <div>
+            <iframe width="400" src="https://www.youtube.com/embed/ptXiQwE535s?si=tYxcSMT_t7mgWDHJ&amp;controls=0&amp;start=10"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+             web-share" allowfullscreen></iframe>
+        </div>
+    </aside>
+    <footer class="footer">
+        <nav> <!--//LISTA DESORDENADA//solamente enlaces de navegacion-->
+            <ul class="cajafooter">  <!--ol lista ordenada 1,2,3-->
+                <li class="abajo"><a  class="colorBlanco linkNav" " href="#">Preguntas <n>Frecuentes</n></a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav" " href="#">Contactanos</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Prensa</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav"" href="#Conferencia">Conferencia</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Terminos y <n>condiciones</n></a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Privacidad</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

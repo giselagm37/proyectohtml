@@ -1,0 +1,251 @@
+/* se limpia margen y padin (margen interno)
+/*margen top(arriba),right,boton(abajo),left,(auto)para centrar solo de ancho*/
+/*line-height: 1.5;
+font-size:  1.5rem;
+width: 30%; alto
+height: 80%; ancho*/
+
+*{ /*/asi afecta a todos los elementos SIEMPRE PONER ESTO*/
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}    
+/* ENCABEZADO */
+.cabecera{
+    display: flex;
+    background-color: rgb(53,58,64); /*fondo*/           
+    justify-content: center;
+    justify-content: space-evenly;
+    .cabecera img{ 
+        margin-right:50px; /*5rem*/
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-position: right;
+        background-size: no-repeat;
+        /*background-size: contein; ocupa todo el contenedor*/
+        }
+    .cabeceraTexto{
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 3rem; /*tamaño de la imagen*/ 
+        font-family: Tahoma, sans-serifS; 
+    }  
+    .listaC{    /* cabecera*/
+        display: flex;
+        list-style: none; /*saca los circulitos que viene por defecto*/ 
+        text-align: center;  /*alinea el texto a la derecha*/
+        font-size: 2rem;
+        justify-content: space-evenly;
+        
+    }
+    .linea{
+        margin-top:70px;
+         /*pone una al lado del otro viene en block por defecto*/
+        display: flex;
+        display: inline;
+        justify-content: space-evenly;
+      
+    } 
+}     
+.linkNav{
+    text-decoration: none; /*quita raya de link se hereda del ancla*/
+}
+/* conf de Bs As*/
+.conf{
+    color: white;
+    padding-top: 15px;
+    height: 1000px;
+    text-align: right;
+    background-image: linear-gradient(to right, #000000cc, #0000004c, #000000bb), url("../assets/img/hawaii.jpg");
+    background-size: contein; /*ocupa todo el contenedor*/
+    background-size: no-repeat;
+    background-position: center;
+    font-family: Tahoma, sans-serifS;
+    /*font-weight: 200;*/
+    font-size: 15px;   /*tamaño*/
+    /*background-attachment: fixed; /*la imagen no se mueve*/
+    }
+.titulo{
+    padding-top: 300px;
+    font-family:Tahoma, sans-serif;
+    font-weight: 200;
+    /*margin-left: 200px;*/
+    text-align: right; 
+    color: white;
+    font-size: 3rem;
+    font-weight: 200px;/*grosor de la fuente*/
+    display:flex;
+    /*flex-direction:*/
+    justify-content: right;
+    align-items: right;  /* mueve el texto*/
+    justify-content: right;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+.pPrincipal{
+    display:flex;
+    line-height: 1.5;  /*interlineado*/
+    flex-direction:column;
+    justify-content: right;
+    align-items: right;  /* mueve el texto*/
+    justify-content: right;
+    margin-right: 120px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;/*tamaño de la letra*/
+ }
+
+.bordeV{
+    background-color: green;
+}
+.borde{
+    border: 1px solid rgb(182,182,182);
+}
+.fuenteChica{
+    font-size: 10px;
+}
+.fuenteNormal{
+    font-size: 24px;
+}
+.fuenteGrande{
+    font: 36px;
+}
+.colorNegro{
+    color: black;
+}
+.colorBlanco{
+    color:white ;
+} 
+.colorG{
+    color:rgb(160, 165, 170);
+} 
+.colorGris{
+    background-color:rgb(99, 108, 119) ;
+    color:white;
+}
+.colorVerde{
+    color:rgb(8, 83, 8);
+}  
+/*ORADORES*/
+.colorAmarillo{
+    background-color:gold;
+    color: black;
+}
+.colorCeleste{
+    background-color:deepskyblue ;
+    color:white;
+}
+.colorRojo{
+    background-color: red;
+    color:white;
+}
+.oradores{
+    height: 100vh; /*alto del contenedor*/
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+.oradores h2{
+    padding-top: 20px;  /*borde superior del contenedor*/
+}
+.tarjeta{  /*contenido de la tarjeta NO LA FOTO*/
+    background-color:white;
+    border: 1px solid rgb(182,182,182);/*  bordea */
+    border-radius: 5px;
+    width: 30%; /*alto*/
+    height: 80%; /*ancho*/
+    /*hago que los elementos en bloque se pongan uno al lado del otro */
+    display: inline-block;
+    margin-right: 20px; /*margen entre tarjetas*/
+    margin-top:50px;
+    text-align: left; /*texto hacia la izq*/
+}
+.tarjeta Img{
+    width:100%; /*alto*/
+    height:60%; /*ancho*/
+    object-fit: contain;/*controla la deformacion de la imagen*/
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.cuerpoTarjeta{
+    margin:10px; /*margen de la tarjeta*/
+}
+.cuerpoTarjeta h4{
+    display:inline-block;
+    border-radius:5px; /* borde redondeado*/
+    margin-right: 5px;
+    padding:0 5px;
+}
+.nombre{
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+/*octubre*/
+.octubre{
+    height: 67vh;
+    .octubreCuerpo{
+        display: flex;
+        flex-direction: row;
+        height: 100%;  /*alto*/
+        row-gap: 2px;
+        .octubreCuerpo img{
+        width: 100%; /*ancho*/
+        height:100%; /*alto*/
+        background-position: center;
+        background-size:cover; 
+        background-repeat: no-repeat;                
+        }  
+        .octubreCuerpoTexto{
+        padding:30px ;      
+        width: 50%;/*ancho*/
+        height:100%; /*alto*/
+        background-color: rgb(53,58,64); 
+        display:flex;
+        flex-direction: column;
+        color:white;
+        font-family: "noto sans shavian", sans-serif;
+        line-height: 2;
+        .octubreCuerpoTextoh2{
+            align-items: left;
+            font-size: 3rem;
+            }
+        .octubreCuerpoTextop{
+            line-height: 1.5;
+            font-size:  1.5rem;
+            align-items: center;
+            }            
+        }
+    } 
+}
+.cuadro{
+    height: 50%;
+    width: 50%;
+    font-size:  1.2rem;
+    font-family: Tahoma, sans-serifS; 
+    margin-left: 500px;
+    align-items: center;
+    text-align: center;
+
+} 
+/*FOOTER*/
+.footer{
+    height:15vh ;/*alto*/
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+    font-size: 1.5rem; /*tamaño de la letra bloque*/
+    font-family: Tahoma, sans-serifS;
+    display:flex; /*pasan a estar en fila en el eje x*/ 
+    flex-direction: column; /* row por defecto para determinar que sea fila o columna*/ 
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    .abajo{
+    display:inline-block;
+    list-style: none;
+    
+}
+}
+
