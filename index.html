@@ -22,9 +22,9 @@
         <section class="cabecera">
             <a  href="index.html"> 
                 <!--//EXTERNO Y ABSOLUTO //ancla nos lleva a una pagina web//target para que se abra en otra pestaña-->
-                <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo 4.0" loading="lazy">
+                <img class="lucas"   src="./assets/img/codoacodo.png" alt="Logo de codo a codo 4.0" witch="20"loading="lazy">
             </a>
-                <h2 class="cabeceraTexto colorBlanco"> Conf Bs As </h2>
+                <h2 class="cabeceraTitulo colorBlanco"> Conf Bs As </h2>
                 <nav> <!--//LISTA DESORDENADA//solamente enlaces de navegacion-->
                     <ul class="listaC">  <!--ol lista ordenada 1,2,3-->
                         <li class="linea"><a class="colorBlanco linkNav " href="#conferencia">La conferencia</a></li>
@@ -39,17 +39,21 @@
     </header> 
     <main > 
         <section class="conf">
-            <!-- la imagen de fondo la ponemos con css<img src=" " alt="imagen del palacio de Aguas Argentinas ">--> 
-            <h1 class="titulo"> Conf de Buenos Aires </h1>
-                <p class="Pprincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ea error, cum excepturi rerum veritatis 
-                repellat perferendis magni delectus aliquid tempore eos 
-                cupiditate totam neque iure accusantium in
-                dolorum officiis minus.
+            <!-- la imagen de fondo la ponemos con css-->
+            <!--<img src="./assets/img/hawaii.jpg " alt="imagen del palacio de Aguas Argentinas "loading="lazy">-->
+            <div class="CajaConf">
+                <h1 class="confTitulo"> Conf de Bs As </h1>
+                <p class="conftexto">Agua y Saneamientos Argentinos (AySA) es una empresa pública argentina
+                    dedicada a la prestación de servicio de agua corriente y cloacas. Es la sucesora de Aguas Argentinas
+                    (activa de 1993 a 2006), que a su vez sucedió a Obras Sanitarias de la Nación (OSN), fundada en 1912 
+                    y privatizada en 1993. AySA brinda servicios a la población de la ciudad de Buenos Aires y a veintiséis
+                    partidos de la provincia de Buenos Aires, en el Gran Buenos Aires. 
                
             </p>
-            <a class="linea linkNav lista colorBlanco borde" href=""> Quiero ser Orador </a>
-            <a class="linea linkNav lista colorBlanco bordeV" href=" "> Comprar tickets </a>
+                <a class="linea linkNav lista colorBlanco borde" href=""> Quiero ser Orador </a>
+                <a class="linea linkNav lista colorBlanco bordeV" href=" "> Comprar tickets </a>
+            </div>
+            
         </section>
     
     <!--//// class= //para el margen-->
@@ -64,9 +68,9 @@
                         <h4 class="colorAmarillo cuerpoT"> JavaScript </h4>
                         <h4 class="colorCeleste"> React </h4>
                         <h3 class="nombre"> Steve Jobs </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
-                        nobis dolorem, fuga voluptatum illo quos, voluptates, similique pariatur repellat placeat odio 
-                        itaque quis? Voluptate placeat modi quae iste?</p>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis enim 
+                        exercitationem dolorum eum eaque a reprehenderit. Facere, unde, quisquam illo 
+                        error dolore, distinctio quae provident dicta labore accusamus aperiam.</p>
                 </div>
                 </div>    
                 <div class="tarjeta">    
@@ -75,7 +79,7 @@
                         <h4 class="colorAmarillo cuerpoT "> JavaScript </h4>
                         <h4 class="colorCeleste"> React </h4>
                         <h3 class="nombre"> Bill Gates </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
                         nobis dolorem, fuga voluptatum illo quos, voluptates, similique pariatur repellat placeat odio 
                         itaque quis? Voluptate placeat modi quae iste?</p>
                     </div>
@@ -86,7 +90,7 @@
                         <h4 class="colorGris cuerpoT "> Negocios </h4>
                         <h4 class="colorRojo"> Startups </h4>
                         <h3 class="nombre"> Ada Lovelace </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae distinctio 
                         nobis dolorem, fuga voluptatum illo quos, voluptates, similique pariatur repellat placeat odio 
                         itaque quis? Voluptate placeat modi quae iste?</p>
                     </div>
@@ -112,51 +116,51 @@
             </div>
         </section>  
         </section>
-            <section>
+            <!--<section>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237167395!2d-58.39758742425996!3d-34.60070657295539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1693512779150!5m2!1ses!2sar"
                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </section>
-        <section id="formularioOrador"> 
-            <div class="cuadro">
-                <h2>Conviertete en orador</h2>
+            </section>-->
+        <section class="cuadro" id="formularioOrador"> 
+            <div >
+                <p>CONVIERTETE EN UN</p>
+                <h1 class="fuenteGrande"> ORADOR </h1>
+                <p>anotaté como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
                 <form action="./pages/404.html">  <!--action="#" ó method="get"// para ir a otro lado-->
-                    <div>
+                    <div class="cajainput">
                         <input type="text" id="name" name= "name" placeholder="Nombre" required> <!--donde completa el usuario// importante poner id-->
                         <input type="text" id="apellido" name= "apellido" placeholder="Apellido" required>
-                    </div>
-                    <textarea name="comentario" id="comentario" cols="55" rows="5"></textarea>
-                    </div>
+                    </div >
                     <div>
-                    <input type="reset" value="limpiar formulario"> <!--limpia el formulario-->
-                    <input type="submit" value="enviar formulario" required>
+                        <textarea placeholder="Sobre qué quieres hablar?" name="comentario" id="comentario" cols="55" rows="5"></textarea>
+                    </div>
+                    <div class="enviar">
+                    <!--<input type="reset" value="limpiar formulario"> limpia el formulario-->
+                        <p>Recuerda incluir un título para tu charla</p>
+                        <button> Enviar </button> 
                     </div>
                 </form> 
             </div>    
-            
-        
-                        
-
-        </section>
+         </section>
 
     </main>
-    <aside>
-        <p> PUBLICIDAD </p> <!--estructura posible para publicidad-->
-        <div>
+    <!--<aside>
+        <div class="publicidad">
+            <p> PUBLICIDAD </p> estructura posible para publicidad
             <iframe width="400" src="https://www.youtube.com/embed/ptXiQwE535s?si=tYxcSMT_t7mgWDHJ&amp;controls=0&amp;start=10"
              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
              web-share" allowfullscreen></iframe>
         </div>
-    </aside>
+    </aside> -->
     <footer class="footer">
         <nav> <!--//LISTA DESORDENADA//solamente enlaces de navegacion-->
-            <ul class="cajafooter">  <!--ol lista ordenada 1,2,3-->
-                <li class="abajo"><a  class="colorBlanco linkNav" " href="#">Preguntas <n>Frecuentes</n></a></li>
-                <li class="abajo"><a  class="colorBlanco linkNav" " href="#">Contactanos</a></li>
-                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Prensa</a></li>
-                <li class="abajo"><a  class="colorBlanco linkNav"" href="#Conferencia">Conferencia</a></li>
-                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Terminos y <n>condiciones</n></a></li>
-                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Privacidad</a></li>
-                <li class="abajo"><a  class="colorBlanco linkNav"" href="#">Estudiantes</a></li>
+            <ul>  <!--ol lista ordenada 1,2,3-->
+                <li class="abajo"><a  class="colorBlanco linkNav"  href="#">Preguntas <n>Frecuentes</n></a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav"  href="#">Contactanos</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav" href="#">Prensa</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav" href="#Conferencia">Conferencia</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav" href="#">Terminos y <n>condiciones</n></a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav" href="#">Privacidad</a></li>
+                <li class="abajo"><a  class="colorBlanco linkNav" href="#">Estudiantes</a></li>
             </ul>
         </nav>
     </footer>

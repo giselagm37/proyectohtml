@@ -11,44 +11,49 @@ height: 80%; ancho*/
     box-sizing:border-box;
 }    
 /* ENCABEZADO */
+/*  Mobile*/
+
+    .lucas{
+    height: 15vh;
+    display:inline-block;
+    align-items: left;
+    background-position: left;
+    background-size: no-repeat;
+    background-size: contein;/* ocupa todo el contenedor*/
+    margin-left: 0;
+}
 .cabecera{
+    height:15vh ;/*alto*/
     display: flex;
     background-color: rgb(53,58,64); /*fondo*/           
-    justify-content: center;
+    justify-content: left;
     justify-content: space-evenly;
-    .cabecera img{ 
-        margin-right:50px; /*5rem*/
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        background-position: right;
-        background-size: no-repeat;
-        /*background-size: contein; ocupa todo el contenedor*/
-        }
-    .cabeceraTexto{
+    .cabeceraTitulo{
         margin-top:50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        font-size: 3rem; /*tamaño de la imagen*/ 
-        font-family: Tahoma, sans-serifS; 
+        display: inline-block;
+        flex-direction: left;
+        align-items: left;
+        text-align: left;
+        font-size: 1.6rem; /*tamaño de la imagen*/ 
+        font-family: Tahoma light;
+        margin-right:400px;  
     }  
     .listaC{    /* cabecera*/
+        font-family:Tahoma light;
         display: flex;
         list-style: none; /*saca los circulitos que viene por defecto*/ 
         text-align: center;  /*alinea el texto a la derecha*/
-        font-size: 2rem;
         justify-content: space-evenly;
-        
+        align-items: center;
     }
     .linea{
-        margin-top:70px;
+        margin-top:50px;
          /*pone una al lado del otro viene en block por defecto*/
         display: flex;
-        display: inline;
+        display: inline-block;
         justify-content: space-evenly;
-      
+        margin-right: 30px;
+        font-size: 1.3rem; /*tamaño de la letra*/ 
     } 
 }     
 .linkNav{
@@ -56,63 +61,55 @@ height: 80%; ancho*/
 }
 /* conf de Bs As*/
 .conf{
-    color: white;
-    padding-top: 15px;
-    height: 1000px;
-    text-align: right;
     background-image: linear-gradient(to right, #000000cc, #0000004c, #000000bb), url("../assets/img/hawaii.jpg");
+    background-size: contein;
     background-size: contein; /*ocupa todo el contenedor*/
     background-size: no-repeat;
     background-position: center;
-    font-family: Tahoma, sans-serifS;
-    /*font-weight: 200;*/
-    font-size: 15px;   /*tamaño*/
-    /*background-attachment: fixed; /*la imagen no se mueve*/
-    }
-.titulo{
-    padding-top: 300px;
-    font-family:Tahoma, sans-serif;
-    font-weight: 200;
-    /*margin-left: 200px;*/
-    text-align: right; 
+    height: 1000px;
+    
+  } 
+.CajaConf{
+    height: 700px;
+    width: 700px;
+    margin-right: 20px;
+    margin-left:1000px;
+    text-align:center; 
     color: white;
-    font-size: 3rem;
-    font-weight: 200px;/*grosor de la fuente*/
-    display:flex;
-    /*flex-direction:*/
-    justify-content: right;
-    align-items: right;  /* mueve el texto*/
-    justify-content: right;
-    margin-right: 120px;
-    margin-bottom: 50px;
 }
-.pPrincipal{
-    display:flex;
-    line-height: 1.5;  /*interlineado*/
-    flex-direction:column;
+.confTitulo{
+    padding-top: 300px;
+    font-family: Tahoma Light;
+    text-align:right; 
+    color: white;
+    font-size: 2rem; /*tamaño*/
+    font-weight: 15px;/*grosor de la fuente*/
     justify-content: right;
     align-items: right;  /* mueve el texto*/
+    margin-bottom: 30px; }
+.conftexto{
+    line-height: 1.5;  /*interlineado*/
     justify-content: right;
-    margin-right: 120px;
-    margin-bottom: 50px;
-    font-size: 1.5rem;/*tamaño de la letra*/
- }
+    /*align-items: right;  /* mueve el texto*/
+    font-size: 1.2rem;/*tamaño de la letra*/
+    margin-right: 0;
+    font-family: Tahoma Light;
+    text-align:right; 
+    margin-bottom: 30px;
+    }
 
 .bordeV{
     background-color: green;
 }
 .borde{
+    margin-top:50px;
     border: 1px solid rgb(182,182,182);
-}
+    margin-right: 20px ;
+    border-radius: 5px;
+    }
 .fuenteChica{
     font-size: 10px;
-}
-.fuenteNormal{
-    font-size: 24px;
-}
-.fuenteGrande{
-    font: 36px;
-}
+ }
 .colorNegro{
     color: black;
 }
@@ -128,8 +125,16 @@ height: 80%; ancho*/
 }
 .colorVerde{
     color:rgb(8, 83, 8);
+    border-radius: 1px;
 }  
 /*ORADORES*/
+.fuenteNormal{
+    font-family: Tahoma Light;
+    font-size: 15px;
+}
+.fuenteGrande{
+    font-family: Tahoma Light;
+    font-size: 50px; }
 .colorAmarillo{
     background-color:gold;
     color: black;
@@ -173,6 +178,10 @@ height: 80%; ancho*/
 .cuerpoTarjeta{
     margin:10px; /*margen de la tarjeta*/
 }
+.parrafo{
+    font-family: Tahoma, sans-serifS;
+    line-height: 1.5;
+}
 .cuerpoTarjeta h4{
     display:inline-block;
     border-radius:5px; /* borde redondeado*/
@@ -183,10 +192,9 @@ height: 80%; ancho*/
     margin-top:5px;
     margin-bottom:20px;
 }
-
 /*octubre*/
 .octubre{
-    height: 67vh;
+    height: 69vh;
     .octubreCuerpo{
         display: flex;
         flex-direction: row;
@@ -207,45 +215,367 @@ height: 80%; ancho*/
         display:flex;
         flex-direction: column;
         color:white;
-        font-family: "noto sans shavian", sans-serif;
+        font-family:  Tahoma, sans-serifS;
         line-height: 2;
         .octubreCuerpoTextoh2{
             align-items: left;
-            font-size: 3rem;
+            font-size: 2rem;
             }
         .octubreCuerpoTextop{
             line-height: 1.5;
-            font-size:  1.5rem;
+            font-size:  1.2rem;
             align-items: center;
             }            
         }
     } 
 }
 .cuadro{
-    height: 50%;
+    height: 60vh;
     width: 50%;
     font-size:  1.2rem;
     font-family: Tahoma, sans-serifS; 
-    margin-left: 500px;
+    margin-left: 430px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     align-items: center;
     text-align: center;
+    } 
+.cuadro h1{
+    margin-bottom: 20px;
+}
+input{
+    width: 50%;
+    margin:15px;
+    border-radius: 3px;
+    display: inline;
+    flex-direction: inline;
+    padding: 10px 5px;
+    border-radius: 1px;
+}
+.cajainput{
+    height: 30%;
+    width: 100%;
+    display:flex;
 
-} 
+}
+textarea{
+    padding: 15px 10px;
+    height: 30%;
+    width: 95%;
+    margin:15px;
+    border-radius: 1px;
+}
+
 /*FOOTER*/
 .footer{
     height:15vh ;/*alto*/
     background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
-    font-size: 1.5rem; /*tamaño de la letra bloque*/
+    font-size: 1.3rem; /*tamaño de la letra bloque*/
     font-family: Tahoma, sans-serifS;
     display:flex; /*pasan a estar en fila en el eje x*/ 
-    flex-direction: column; /* row por defecto para determinar que sea fila o columna*/ 
+    flex-direction: row; /* row por defecto para determinar que sea fila o columna*/ 
     align-items: center;
     justify-content: space-around;
     text-align: center;
     .abajo{
-    display:inline-block;
-    list-style: none;
+        height: 10%;
+        width: 10%;   
+        display:inline-block;
+        list-style: none;
+        margin-right: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;  
+    }
+     }
     
-}
-}
+ /*CONDICIONAL*/
+/* Notebooks y destock media cueri*/
+@media screen and (min-width:991px){
+    .lucas{
+        height: 15vh;
+        display:inline-block;
+        align-items: left;
+        background-position: left;
+        background-size: no-repeat;
+        background-size: contein;/* ocupa todo el contenedor*/
+        margin-left: 0;
+    }
+    .cabecera{
+        height:15vh ;/*alto*/
+        display: flex;
+        background-color: rgb(53,58,64); /*fondo*/           
+        justify-content: left;
+        justify-content: space-evenly;
+        .cabeceraTitulo{
+            margin-top:50px;
+            display: inline-block;
+            flex-direction: left;
+            align-items: left;
+            text-align: left;
+            font-size: 1.6rem; /*tamaño de la imagen*/ 
+            font-family: Tahoma light;
+            margin-right:400px;  
+        }  
+        .listaC{    /* cabecera*/
+            font-family:Tahoma light;
+            display: flex;
+            list-style: none; /*saca los circulitos que viene por defecto*/ 
+            text-align: center;  /*alinea el texto a la derecha*/
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .linea{
+            margin-top:50px;
+             /*pone una al lado del otro viene en block por defecto*/
+            display: flex;
+            display: inline-block;
+            justify-content: space-evenly;
+            margin-right: 30px;
+            font-size: 1.3rem; /*tamaño de la letra*/ 
+        } 
+    }     
+    .linkNav{
+        text-decoration: none; /*quita raya de link se hereda del ancla*/
+    }
+    /* conf de Bs As*/
+    .conf{
+        background-image: linear-gradient(to right, #000000cc, #0000004c, #000000bb), url("../assets/img/hawaii.jpg");
+        background-size: contein;
+        background-size: contein; /*ocupa todo el contenedor*/
+        background-size: no-repeat;
+        background-position: center;
+        height: 1000px;
+        
+      } 
+    .CajaConf{
+        height: 700px;
+        width: 700px;
+        margin-right: 20px;
+        margin-left:1000px;
+        text-align:center; 
+        color: white;
+    }
+    .confTitulo{
+        padding-top: 300px;
+        font-family: Tahoma Light;
+        text-align:right; 
+        color: white;
+        font-size: 2rem; /*tamaño*/
+        font-weight: 15px;/*grosor de la fuente*/
+        justify-content: right;
+        align-items: right;  /* mueve el texto*/
+        margin-bottom: 30px; }
+    .conftexto{
+        line-height: 1.5;  /*interlineado*/
+        justify-content: right;
+        /*align-items: right;  /* mueve el texto*/
+        font-size: 1.2rem;/*tamaño de la letra*/
+        margin-right: 0;
+        font-family: Tahoma Light;
+        text-align:right; 
+        margin-bottom: 30px;
+        }
+    
+    .bordeV{
+        background-color: green;
+    }
+    .borde{
+        margin-top:50px;
+        border: 1px solid rgb(182,182,182);
+        margin-right: 20px ;
+        border-radius: 5px;
+        }
+    .fuenteChica{
+        font-size: 10px;
+     }
+    .colorNegro{
+        color: black;
+    }
+    .colorBlanco{
+        color:white ;
+    } 
+    .colorG{
+        color:rgb(160, 165, 170);
+    } 
+    .colorGris{
+        background-color:rgb(99, 108, 119) ;
+        color:white;
+    }
+    .colorVerde{
+        color:rgb(8, 83, 8);
+        border-radius: 1px;
+    }  
+    /*ORADORES*/
+    .fuenteNormal{
+        font-family: Tahoma Light;
+        font-size: 15px;
+    }
+    .fuenteGrande{
+        font-family: Tahoma Light;
+        font-size: 50px; }
+    .colorAmarillo{
+        background-color:gold;
+        color: black;
+    }
+    .colorCeleste{
+        background-color:deepskyblue ;
+        color:white;
+    }
+    .colorRojo{
+        background-color: red;
+        color:white;
+    }
+    .oradores{
+        height: 100vh; /*alto del contenedor*/
+        width: 80%;
+        margin:0 auto;
+        text-align: center;
+    }
+    .oradores h2{
+        padding-top: 20px;  /*borde superior del contenedor*/
+    }
+    .tarjeta{  /*contenido de la tarjeta NO LA FOTO*/
+        background-color:white;
+        border: 1px solid rgb(182,182,182);/*  bordea */
+        border-radius: 5px;
+        width: 30%; /*alto*/
+        height: 80%; /*ancho*/
+        /*hago que los elementos en bloque se pongan uno al lado del otro */
+        display: inline-block;
+        margin-right: 20px; /*margen entre tarjetas*/
+        margin-top:50px;
+        text-align: left; /*texto hacia la izq*/
+    }
+    .tarjeta Img{
+        width:100%; /*alto*/
+        height:60%; /*ancho*/
+        object-fit: contain;/*controla la deformacion de la imagen*/
+        object-fit: cover;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .cuerpoTarjeta{
+        margin:10px; /*margen de la tarjeta*/
+    }
+    .parrafo{
+        font-family: Tahoma, sans-serifS;
+        line-height: 1.5;
+    }
+    .cuerpoTarjeta h4{
+        display:inline-block;
+        border-radius:5px; /* borde redondeado*/
+        margin-right: 5px;
+        padding:0 5px;
+    }
+    .nombre{
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    /*octubre*/
+    .octubre{
+        height: 67vh;
+        .octubreCuerpo{
+            display: flex;
+            flex-direction: row;
+            height: 100%;  /*alto*/
+            row-gap: 2px;
+            .octubreCuerpo img{
+            width: 100%; /*ancho*/
+            height:100%; /*alto*/
+            background-position: center;
+            background-size:cover; 
+            background-repeat: no-repeat;                
+            }  
+            .octubreCuerpoTexto{
+            padding:30px ;      
+            width: 50%;/*ancho*/
+            height:100%; /*alto*/
+            background-color: rgb(53,58,64); 
+            display:flex;
+            flex-direction: column;
+            color:white;
+            font-family:  Tahoma, sans-serifS;
+            line-height: 2;
+            .octubreCuerpoTextoh2{
+                align-items: left;
+                font-size: 2rem;
+                }
+            .octubreCuerpoTextop{
+                line-height: 1.5;
+                font-size:  1.2rem;
+                align-items: center;
+                }            
+            }
+        } 
+    }
+    .cuadro{
+        height: 60vh;
+        width: 50%;
+        font-size:  1.2rem;
+        font-family: Tahoma, sans-serifS; 
+        margin-left: 430px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        align-items: center;
+        text-align: center;
+        } 
+    .cuadro h1{
+        margin-bottom: 20px;
+    }
+    input{
+        width: 50%;
+        margin:15px;
+        border-radius: 3px;
+        display: inline;
+        flex-direction: inline;
+        padding: 10px 5px;
+    }
+    .cajainput{
+        height: 30%;
+        width: 100%;
+        display:flex;
+    }
+    textarea{
+        padding: 15px 10px;
+        height: 30%;
+        width: 95%;
+        margin:15px;
+        border-radius: 3px;
+    }
+    button{
+        background-color: greenyellow;
+        color: white;
+        width: 95%;
+        margin:15px;
+        border-radius: 3px;
+        display: inline;
+        flex-direction: inline;
+        padding: 10px 5px;
+        font-size: 1.3rem; /*tamaño de la letra*/
+
+    }
+    /*FOOTER*/
+    .footer{
+        height:15vh ;/*alto*/
+        background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+        font-size: 1.3rem; /*tamaño de la letra bloque*/
+        font-family: Tahoma, sans-serifS;
+        display:flex; /*pasan a estar en fila en el eje x*/ 
+        flex-direction: row; /* row por defecto para determinar que sea fila o columna*/ 
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        .abajo{
+            height: 10%;
+            width: 10%;   
+            display:inline-block;
+            list-style: none;
+            margin-right: 30px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;  
+        }
+
+ }
+ }
 
